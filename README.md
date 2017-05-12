@@ -33,7 +33,6 @@ The goal of the game is to avoid the enemies. Collect special items; like stars 
     - I can handle it. (**+80 Points**)
     - Bring it on! (**+150 Points**)
 
-
 ## Demo
 A live preview of this project can be found here:
 [Frogger Game](http://gmawji.com/frogger-game/)
