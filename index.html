@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Effective JavaScript: Frogger</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Frogger Game!</title>
+    <!-- Make it look pretty! -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <div id="selectionPopup">
+        <h1>Let's Play <span class="text-highlight-green">Frogger!</span></h1>
+        <hr>
+            <h2 class="text-highlight-red">Game Instructions</h2>
+            <p>Frogger game objective is to catch as many gems and stars as you can before your time runs out. Don't get <span class="text-highlight-red">bugged!</span></p>
+        <hr>
+            <h2>Pick your level:</h2>
+            <button id="easyButton" class="button levelButton" onclick="difficultyClick(this.id, 'Easy')">Don't hurt me!</button>
+            <button id="mediumButtom" class="button levelButton" onclick="difficultyClick(this.id, 'Medium')">I can handle it.</button>
+            <button id="hardButton" class="button levelButton" onclick="difficultyClick(this.id, 'Hard')">Bring it on!</button>
+        <hr>
+            <h2>Set your game time:</h2>
+            <button id="oneButton" class="button timeButton" onclick="timeClick (this.id, 'one')">1 Minute</button>
+            <button id="twoButton" class="button timeButton" onclick="timeClick (this.id, 'two')">2 Minutes</button>
+            <button id="fourButton" class="button timeButton" onclick="timeClick (this.id, 'four')">4 Minutes</button>
+        <hr>
+            <h2>Who do you want to be?</h2>
+            <img id="char0" class="charImg pulse" onclick="charClick(this.id, 0)" src="images/char-boy.png" alt="boy character"/>
+            <img id="char1" class="charImg pulse" onclick="charClick(this.id, 1)" src="images/char-cat-girl.png" alt="cat girl character" />
+            <img id="char2" class="charImg pulse" onclick="charClick(this.id, 2)" src="images/char-horn-girl.png" alt="horn girl character"/>
+            <img id="char3" class="charImg pulse" onclick="charClick(this.id, 3)" src="images/char-pink-girl.png" alt="pink girl character"/>
+            <img id="char4" class="charImg pulse" onclick="charClick(this.id, 4)" src="images/char-princess-girl.png" alt="princess girl character"/>
+        <hr>
+            <button id="startGame" class="button" onclick="startClick();">Start Game</button>
+    </div>
+
+    <!-- Game over popup, to display points summary -->
+    <div id="gameOverPopup">
+        <h1>Game Over!</h1>
+        <hr>
+            <div id="gameSummary">
+                <h2>You Scored</h2>
+                <h1 id="pointsSummary">0</h1>
+                <h2>Points</h2>
+            </div>
+    </div>
+
+    <!-- Stats -->
+     <div id ="stats">
+        <div id="lives">Lives: 3</div>
+        <div id="timer">2:00</div>
+        <div id="points">Points: 0</div>
+    </div>
+
     <script src="js/resources.js"></script>
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script>
+
+    <div id="dificultyText">Dificulty: Don't hurt me!</div>
+
+    <button id="resetButton" class="button" onclick="history.go(0)">Reset</button>
+
 </body>
 </html>
