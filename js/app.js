@@ -221,14 +221,14 @@ function difficultyClick (buttonID, rating) {
         break;
     case 'Medium':
         enemySpeed = 400;
-        collisionP = 100;
+        collisionP = 60;
         lives = 6;
         gemIndex = 1;
-        gemPoints = 40;
+        gemPoints = 80;
         break;
     case 'Hard':
         enemySpeed = 600;
-        collisionP = 70;
+        collisionP = 100;
         lives = 8;
         gemIndex = 2;
         gemPoints = 150;
