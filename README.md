@@ -13,7 +13,7 @@ This game is a project for the Udacity FEND Course.
 3. Simply open index.html and play the game!
 
 ## How to play!
-The goal of the game is to avoid the enemies and get to the water. Reaching the water increases your score and also intensifies the speed of your enemies. Collect special items to boost your score further, and also watch out for those hearts to get some extra lives! When the game ends your score is displayed accompanied by your best score. Press space bar to restart the game.
+The goal of the game is to avoid the enemies. Collect special items; like stars and gems, to boost your score further When the game ends your total score is displayed. Press the reset button to go again!
 
 ### Controls
 - up arrow (**↑**) - move up
